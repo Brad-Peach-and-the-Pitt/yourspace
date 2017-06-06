@@ -5,7 +5,7 @@ import { createContainer } from 'meteor/react-meteor-data'
 
 import { Rooms } from '../api/rooms.js'
 
-class App extends Component {
+export class App extends Component {
   handleSubmit(event) {
     event.preventDefault()
     const name = ReactDOM.findDOMNode(this.refs.nameInput).value.trim()

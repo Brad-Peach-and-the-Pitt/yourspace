@@ -18,7 +18,7 @@ export class RoomName extends Component {
     const roomClassName = this.props.room.chcked ? "checked" : "";
     return(
       <div>
-        <td className={roomClassName}><button onClick={this.deleteThisRoom.bind(this)} className='btn btn-warning delete'>Delete</button> <button onClick={this.}></button> {this.props.room.name}</td>
+        <td className={roomClassName}><button onClick={this.deleteThisRoom.bind(this)} className='btn btn-warning delete'>Delete</button> <button onClick={this.editThisRoom.bind(this)} className="btn btn-info">Edit</button> {this.props.room.name}</td>
 
       </div>
     )
