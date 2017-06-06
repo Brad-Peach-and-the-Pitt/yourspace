@@ -4,7 +4,12 @@ import React, { Component, PropTypes } from 'react'
 export default class Room extends Component {
   render() {
     return(
-      <li>{this.props.room.name}</li>
+      <div className="container">
+        <td>{this.props.room.name}</td>
+        <td>{this.props.room.seats}</td>
+        <td>{this.props.room.floor}</td>
+        <td>{this.props.room.tv}</td>
+      </div>
     )
   }
 }

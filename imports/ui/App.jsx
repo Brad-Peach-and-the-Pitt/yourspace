@@ -17,10 +17,28 @@ class App extends Component {
         <header>
           Denver Platte Rooms
         </header>
-        <ul>
-          {this.renderRooms()}
-        </ul>
+        <div className="container-fluid">
+        <div className="panel panel-default">
+          <div className="panel-title">
+          <h3>Denver Platte Rooms</h3>
+        </div>
+        <table className="table table-bordered">
+          <thead>
+            <tr>
+              <th>Room</th>
+              <th>Location</th>
+              <th>Seats</th>
+              <th>TV?</th>
+              <th>Reserve Now!</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.renderRooms()}
+          </tbody>
+        </table>
       </div>
+    </div>
+  </div>
     )
   }
 
