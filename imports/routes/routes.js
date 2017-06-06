@@ -11,7 +11,7 @@ export const renderRoutes = () => (
   <Router history = {browserHistory}>
     <div>
       <Route exact path = '/' component = { App } />
-      <Route eact path = '/edit/:id' component = { EditForm } />
+      <Route exact path = '/edit/:id' component = { EditForm } />
     </div>
   </Router>
 )

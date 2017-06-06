@@ -1,6 +1,13 @@
 
 import React, { Component, PropTypes } from 'react'
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
+
 import { Rooms } from '../api/rooms.js'
 
 export class RoomName extends Component {
@@ -13,10 +20,9 @@ export class RoomName extends Component {
   }
 
   render() {
-    const roomClassName = this.props.room.chcked ? "checked" : "";
     return(
       <div>
-        <td className={roomClassName}><button onClick={this.deleteThisRoom.bind(this)} className='btn btn-warning delete'>Delete</button> <button onClick={this.editThisRoom.bind(this)} className="btn btn-info">Edit</button> {this.props.room.name}</td>
+        <td><button onClick={this.deleteThisRoom.bind(this)} className='btn btn-warning delete'>Delete</button> <Link className="btn btn-info" to={`/edit/${this.props.room._id}`}>Edit</Link> {this.props.room.name}</td>
 
       </div>
     )
