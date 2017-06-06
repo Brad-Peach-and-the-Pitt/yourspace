@@ -2,7 +2,11 @@
 import React, { Component, PropTypes } from 'react'
 
 
+
 export class RoomName extends Component {
+  toggleChecked() {
+
+  }
   render() {
     return(
       <div>
