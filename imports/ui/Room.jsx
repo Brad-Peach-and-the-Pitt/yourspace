@@ -1,16 +1,25 @@
 
 import React, { Component, PropTypes } from 'react'
 
-
+import { Rooms } from '../api/rooms.js'
 
 export class RoomName extends Component {
-  toggleChecked() {
-
+  editThisRoom() {
+    Rooms.update(this.props.room._id, {
+      $set: {checked: !this.props.room.checked},
+    })
   }
+
+  deleteThisRoom() {
+    Rooms.remove(this.props.room._id)
+  }
+
   render() {
+    const roomClassName = this.props.room.chcked ? "checked" : "";
     return(
       <div>
-        <td>{this.props.room.name}</td>
+        <td className={roomClassName}><button onClick={this.deleteThisRoom.bind(this)} className='btn btn-warning delete'>Delete</button> <button onClick={this.}></button> {this.props.room.name}</td>
+
       </div>
     )
   }
