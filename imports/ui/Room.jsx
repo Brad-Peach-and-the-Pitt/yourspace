@@ -5,9 +5,7 @@ import { Rooms } from '../api/rooms.js'
 
 export class RoomName extends Component {
   editThisRoom() {
-    Rooms.update(this.props.room._id, {
-      $set: {checked: !this.props.room.checked},
-    })
+    Rooms.update(this.props.room._id)
   }
 
   deleteThisRoom() {
