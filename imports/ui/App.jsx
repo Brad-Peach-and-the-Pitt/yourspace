@@ -63,7 +63,7 @@ export class App extends Component {
     return (
       <div className="container">
         <Header />
-        
+
 
         <header>
           Denver Platte Rooms
@@ -105,9 +105,14 @@ export class App extends Component {
             </tr>
           </tbody>
         </table>
+
       </div>
+
     </div>
+
   </div>
+
+
     )
   }
 

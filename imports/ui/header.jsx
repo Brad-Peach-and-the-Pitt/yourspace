@@ -5,7 +5,7 @@ import AccountsUIWrapper from './AccountsUIWrapper'
 export default class Header extends Component {
   render() {
     return(
-      <div className="header">
+      <div className="page-header">
         <h1>YourSpace</h1>
         <AccountsUIWrapper  />
       </div>

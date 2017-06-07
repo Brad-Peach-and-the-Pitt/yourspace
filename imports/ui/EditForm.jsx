@@ -44,7 +44,7 @@ import Header from './header.jsx'
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.floor} ref="tvInput" /><br />
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.tv} ref="floorInput" />
 
-        <button type="submit">Submit</button>
+        <button className="btn btn-success" type="submit">Submit</button>
 
       </form>
     </div>
