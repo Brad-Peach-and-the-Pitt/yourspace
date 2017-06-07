@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom'
 import { RoomName, RoomFloor, RoomSeats, RoomTv } from './Room.jsx'
 import { createContainer } from 'meteor/react-meteor-data'
 
+
+// components
+import Header from './header.jsx'
+import AccountsUIWrapper from './AccountsUIWrapper'
+
+// API
 import { Rooms } from '../api/rooms.js'
 
 export class App extends Component {
@@ -17,7 +23,9 @@ export class App extends Component {
       name,
       seats,
       tv,
-      floor
+      floor,
+      owner : Meteor.userId(),
+      username : Meteor.user().username
     })
 
     ReactDOM.findDOMNode(this.refs.nameInput).value = ''
@@ -54,11 +62,16 @@ export class App extends Component {
   render() {
     return (
       <div className="container">
+        <Header />
+        
+
         <header>
           Denver Platte Rooms
         </header>
 
         {/*TO DO: Hide and Show?  */}
+        {
+          this.props.currentUser ?
 
         <form onSubmit={this.handleSubmit.bind(this)} className="form-group new-room">
           <input type='text' ref="nameInput" placeholder="Room Name"></input>
@@ -66,7 +79,8 @@ export class App extends Component {
           <input type='text' ref="tvInput" placeholder="Does the room have a TV?"></input>
           <input type='text' ref="floorInput" placeholder="Floor Room is on"></input>
           <button type="submit" className="btn btn-success">Add Room</button>
-        </form>
+        </form> : " "
+      }
         <div className="container-fluid">
         <div className="panel panel-default">
           <div className="panel-title">
@@ -101,11 +115,12 @@ export class App extends Component {
 
 App.propTypes = {
   rooms: PropTypes.array.isRequired,
-  
+  currentUser : PropTypes.object,
 }
 
 export default createContainer(() => {
   return {
     rooms: Rooms.find({}).fetch(),
+    currentUser: Meteor.user(),
   }
 }, App)

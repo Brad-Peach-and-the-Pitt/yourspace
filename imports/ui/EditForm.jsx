@@ -8,6 +8,7 @@ import {
   Link
 } from 'react-router-dom'
 import Form from 'react-router-form'
+import Header from './header.jsx'
 
 
 
@@ -36,12 +37,13 @@ import Form from 'react-router-form'
   render() {
     return (
       <div className="row container">
+        <Header />
       <form className="form-group col-md-12" onSubmit={this.editThisRoom.bind(this)}>
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.name} ref="nameInput" /><br />
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.seats} ref="seatsInput" /><br />
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.floor} ref="tvInput" /><br />
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.tv} ref="floorInput" />
-        
+
         <button type="submit">Submit</button>
 
       </form>
