@@ -5,23 +5,23 @@ import { Rooms } from '../api/rooms.js'
 
 import Header from './header.jsx';
 
-import { CardName, CardSeats } from './HomeCards.jsx'
+import { Card } from './HomeCards.jsx'
 
 
 export class Home extends Component {
 
 
-  getRoomName() {
+  getRoom() {
     return this.props.rooms.map((room) => (
-      <CardName key={room._id}  room={room}/>
+      <Card key={room._id}  room={room}/>
     ))
   }
 
-  getRoomSeats() {
-    return this.props.rooms.map((room) => (
-      <CardSeats key={room._id}  room={room}/>
-    ))
-  }
+  // getRoomSeats() {
+  //   return this.props.rooms.map((room) => (
+  //     <CardSeats key={room._id}  room={room}/>
+  //   ))
+  // }
 
 
 
@@ -32,8 +32,7 @@ export class Home extends Component {
     return(
       <div>
         <Header />
-        <h3>{this.getRoomName()}</h3>
-        <p>Seats: {this.getRoomSeats()}</p>
+        <h3>{this.getRoom()}</h3>
       </div>
 
     )
