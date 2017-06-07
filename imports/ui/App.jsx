@@ -101,6 +101,7 @@ export class App extends Component {
 
 App.propTypes = {
   rooms: PropTypes.array.isRequired,
+  
 }
 
 export default createContainer(() => {
