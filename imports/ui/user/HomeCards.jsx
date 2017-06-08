@@ -6,6 +6,10 @@ import {
   Link
 } from 'react-router-dom'
 
+import { createContainer } from 'meteor/react-meteor-data'
+import AccountsUIWrapper from '../AccountsUIWrapper.jsx'
+
+
 
 import { Rooms } from '../../api/rooms.js'
 import { Times } from '../../api/times.js'
@@ -18,6 +22,8 @@ export class Card extends Component {
         <h5>Location: {this.props.room.floor}</h5>
         <h5>Tv: {this.props.room.tv} </h5>
         <h5>Capacity: Seats {this.props.room.seats}</h5>
+        {console.log("user log" ,this.props.currentUser)}
+
         <Link to={`/room/${this.props.room._id}`}>Reserve Now</Link>
       </div>
     )
@@ -26,6 +32,7 @@ export class Card extends Component {
 
 Card.propTypes = {
   room: PropTypes.object.isRequired,
+
 }
 
 
@@ -40,5 +47,5 @@ export class TimeCard extends Component {
 }
 
 TimeCard.propsTypes = {
-  time: PropTypes.object.isRequired
+  time: PropTypes.object.isRequired,
 }

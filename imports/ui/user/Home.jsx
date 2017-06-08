@@ -13,8 +13,8 @@ export class Home extends Component {
 
 
   getRoom() {
-    return this.props.rooms.map((room) => (
-      <Card key={room._id}  room={room}/>
+    return this.props.rooms.map((room, ) => (
+      <Card key={room._id}  room={room} />
     ))
   }
 
@@ -34,8 +34,9 @@ export class Home extends Component {
     return(
       <div className="container">
         <Header />
-        <h3>{this.getRoom()} {this.getTime()}</h3>
 
+
+        <h3>{this.getRoom()} {this.getTime()}</h3>
       </div>
 
     )

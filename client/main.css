@@ -1,1 +1,18 @@
 /* CSS declarations go here */
+
+.times {
+  border: 2px solid darkgrey;
+  left: 8em;
+  height: 4em;
+  top: 1em;
+  background-color: green;
+}
+
+.times p{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.reserve .well {
+
+}

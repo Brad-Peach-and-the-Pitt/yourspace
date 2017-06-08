@@ -41,23 +41,7 @@ export class App extends Component {
     ))
   }
 
-  // renderRoomSeats() {
-  //   return this.props.rooms.map((room) => (
-  //     <RoomSeats key={room._id}  room={room}/>
-  //   ))
-  // }
-  //
-  // renderRoomFloor() {
-  //   return this.props.rooms.map((room) => (
-  //     <RoomFloor key={room._id}  room={room}/>
-  //   ))
-  // }
-  //
-  // renderRoomTv() {
-  //   return this.props.rooms.map((room) => (
-  //     <RoomTv key={room._id}  room={room}/>
-  //   ))
-  // }
+  
 
   render() {
     return (
