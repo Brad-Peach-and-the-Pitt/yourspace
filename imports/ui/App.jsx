@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom'
-import { RoomName, RoomFloor, RoomSeats, RoomTv } from './Room.jsx'
+import RoomInfo from './Room.jsx'
 import { createContainer } from 'meteor/react-meteor-data'
 
 
@@ -37,27 +37,27 @@ export class App extends Component {
 
   renderRoomName() {
     return this.props.rooms.map((room) => (
-      <RoomName key={room._id}  room={room}/>
+      <RoomInfo key={room._id}  room={room}/>
     ))
   }
 
-  renderRoomSeats() {
-    return this.props.rooms.map((room) => (
-      <RoomSeats key={room._id}  room={room}/>
-    ))
-  }
-
-  renderRoomFloor() {
-    return this.props.rooms.map((room) => (
-      <RoomFloor key={room._id}  room={room}/>
-    ))
-  }
-
-  renderRoomTv() {
-    return this.props.rooms.map((room) => (
-      <RoomTv key={room._id}  room={room}/>
-    ))
-  }
+  // renderRoomSeats() {
+  //   return this.props.rooms.map((room) => (
+  //     <RoomSeats key={room._id}  room={room}/>
+  //   ))
+  // }
+  //
+  // renderRoomFloor() {
+  //   return this.props.rooms.map((room) => (
+  //     <RoomFloor key={room._id}  room={room}/>
+  //   ))
+  // }
+  //
+  // renderRoomTv() {
+  //   return this.props.rooms.map((room) => (
+  //     <RoomTv key={room._id}  room={room}/>
+  //   ))
+  // }
 
   render() {
     return (
@@ -72,33 +72,27 @@ export class App extends Component {
         {/*TO DO: Hide and Show?  */}
 
         <div className="container-fluid">
-        <div className="panel panel-default">
-          <div className="panel-title">
+        <div>
+          <div>
           <h3>Denver Platte Rooms</h3>
         </div>
-        <table className="table table-bordered">
-          <thead>
-            <tr>
-              <th>Room</th>
-              <th>Seats</th>
-              <th>Location</th>
-              <th>TV?</th>
-              <th>Reserve Now!</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{this.renderRoomName()}</td>
-              <td>{this.renderRoomSeats()}</td>
-              <td>{this.renderRoomFloor()}</td>
-              <td>{this.renderRoomTv()}</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="table table-bordered">
+            <div className="rooms-header row">
+              <div>
+              <h4 className="col-md-3">Room</h4>
+              <h4 className="col-md-3">Seats</h4>
+              <h4 className="col-md-3">Location</h4>
+              <h4 className="col-md-3">TV</h4>
+
+            </div>
+          <div>
+              <p>{this.renderRoomName()}</p>
+          </div>
+        </div>
 
 
       </div>
-
+    </div>
     </div>
     {
       this.props.currentUser ?
