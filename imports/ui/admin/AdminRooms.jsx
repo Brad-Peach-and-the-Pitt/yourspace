@@ -5,11 +5,11 @@ import { createContainer } from 'meteor/react-meteor-data'
 
 
 // components
-import Header from './header.jsx'
-import AccountsUIWrapper from './AccountsUIWrapper'
+import Header from '../header.jsx'
+import AccountsUIWrapper from '../AccountsUIWrapper.jsx'
 
 // API
-import { Rooms } from '../api/rooms.js'
+import { Rooms } from '../../api/rooms.js'
 
 export class App extends Component {
   handleSubmit(event) {

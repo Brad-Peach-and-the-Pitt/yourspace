@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom'
 import { createContainer } from 'meteor/react-meteor-data'
-import Header from './header.jsx'
+import Header from '../header.jsx'
 
 import UserInfo from './UserInfo.jsx'
 

@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 
 
-import { Rooms } from '../api/rooms.js'
+import { Rooms } from '../../api/rooms.js'
 
 export default class RoomInfo extends Component {
 

@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom'
-import AccountsUIWrapper from './AccountsUIWrapper'
+import AccountsUIWrapper from './AccountsUIWrapper.jsx'
 
 import {
   BrowserRouter as Router,

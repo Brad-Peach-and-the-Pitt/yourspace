@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import ReactDOM from 'react-dom'
-import {Rooms} from '../api/rooms.js'
+import {Rooms} from '../../api/rooms.js'
 import { createContainer } from 'meteor/react-meteor-data'
 import {
   BrowserRouter as Router,
@@ -8,7 +8,7 @@ import {
   Link
 } from 'react-router-dom'
 import Form from 'react-router-form'
-import Header from './header.jsx'
+import Header from '../header.jsx'
 
 
 

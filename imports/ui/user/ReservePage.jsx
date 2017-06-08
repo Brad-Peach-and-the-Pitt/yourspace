@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data'
-import { Rooms } from '../api/rooms.js'
+import { Rooms } from '../../api/rooms.js'
 
-import Header from './header.jsx';
+import Header from '../header.jsx';
 
 export class ReservePage extends Component {
   render(){

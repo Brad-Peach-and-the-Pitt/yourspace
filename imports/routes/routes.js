@@ -2,12 +2,12 @@ import React from 'react'
 import { Router, Route } from 'react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import Home from '../ui/Home.jsx'
-import App from '../ui/App.jsx'
-import EditForm from '../ui/EditForm.jsx'
-import ReservePage from '../ui/ReservePage.jsx'
-import AdminSplash from '../ui/AdminSplash.jsx'
-import UserPage from '../ui/UserPage.jsx'
+import Home from '../ui/user/Home.jsx'
+import App from '../ui/admin/AdminRooms.jsx'
+import EditForm from '../ui/admin/EditForm.jsx'
+import ReservePage from '../ui/user/ReservePage.jsx'
+import AdminSplash from '../ui/admin/AdminSplash.jsx'
+import UserPage from '../ui/admin/UserPage.jsx'
 
 const browserHistory = createBrowserHistory()
 

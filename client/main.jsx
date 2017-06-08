@@ -7,7 +7,7 @@ import { renderRoutes } from '../imports/routes/routes.js'
 import '../imports/startup/accounts-config.js'
 
 // components
-import App from '../imports/ui/App.jsx'
+import App from '../imports/ui/admin/AdminRooms.jsx'
 
 Meteor.startup(() => {
   render(

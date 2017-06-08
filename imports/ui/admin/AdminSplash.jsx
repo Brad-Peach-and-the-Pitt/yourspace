@@ -1,14 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data'
-import { Rooms } from '../api/rooms.js'
+import { Rooms } from '../../api/rooms.js'
 import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
 
-import Header from './header.jsx';
+import Header from '../header.jsx';
 
 export default class AdminSplash extends Component {
   render(){

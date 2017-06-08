@@ -7,8 +7,8 @@ import {
 } from 'react-router-dom'
 
 
-import { Rooms } from '../api/rooms.js'
-import { Times } from '../api/times.js'
+import { Rooms } from '../../api/rooms.js'
+import { Times } from '../../api/times.js'
 
 export class Card extends Component {
   render() {
