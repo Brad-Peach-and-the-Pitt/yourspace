@@ -38,7 +38,8 @@ import Header from './header.jsx'
     return (
       <div className="row container">
         <Header />
-      <form className="form-group col-md-12" onSubmit={this.editThisRoom.bind(this)}>
+
+        <form className="form-group col-md-12" onSubmit={this.editThisRoom.bind(this)}>
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.name} ref="nameInput" /><br />
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.seats} ref="seatsInput" /><br />
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.floor} ref="tvInput" /><br />

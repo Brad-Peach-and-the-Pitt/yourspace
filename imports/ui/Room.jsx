@@ -20,14 +20,19 @@ export default class RoomInfo extends Component {
   render() {
     return(
       <div className="container">
+        <div className="row">
+          <Link className="btn btn-info col-md-2" to={`/edit/${this.props.room._id}`}>Edit</Link>
+          <button onClick={this.deleteThisRoom.bind(this)} className='btn btn-warning delete col-md-2'>Delete</button>
+        </div>
         <div className="row well">
-          <button onClick={this.deleteThisRoom.bind(this)} className='btn btn-warning delete'>Delete</button>
+
           <p className="col-md-3">{this.props.room.name}</p>
           <p className="col-md-3">{this.props.room.seats}</p>
           <p className="col-md-3">{this.props.room.floor}</p>
           <p className="col-md-3">{this.props.room.tv}</p>
-          <Link className="btn btn-info" to={`/edit/${this.props.room._id}`}>Edit</Link>
+
         </div>
+
       </div>
     )
   }

@@ -77,7 +77,7 @@ export class App extends Component {
           <h3>Denver Platte Rooms</h3>
         </div>
         <div className="table table-bordered">
-            <div className="rooms-header row">
+            <div className="rooms-header row pull-left">
               <div>
               <h4 className="col-md-3">Room</h4>
               <h4 className="col-md-3">Seats</h4>
