@@ -30,7 +30,7 @@ export class Home extends Component {
 
   render() {
     return(
-      <div>
+      <div className="container">
         <Header />
         <h3>{this.getRoom()}</h3>
       </div>

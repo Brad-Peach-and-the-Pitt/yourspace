@@ -15,7 +15,10 @@ export class Card extends Component {
       <div className="container well">
         <h3>{this.props.room.name}</h3>
         <h5>Times: ======================= </h5>
-        <p> {this.props.room.name} is located on the {this.props.room.floor}. There is {this.props.room.tv} TV and the room seats {this.props.room.seats} people.</p>
+        <h5>Location: {this.props.room.floor}</h5>
+        <h5>Tv: {this.props.room.tv} </h5>
+        <h5>Capacity: Seats {this.props.room.seats}</h5>
+        <Link to={`/room/${this.props.room._id}`}>Reserve Now</Link>
       </div>
     )
   }
