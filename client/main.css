@@ -1,7 +1,6 @@
 /* CSS declarations go here */
 
 
-
 .open1, .open2, .open3, .open4, .open5, .open6, .open7, .open8, .open9, .open10, .open11, .open12  {
   background-color: green;
   border: 2px solid darkgrey;
@@ -10,7 +9,7 @@
   top: 1em;
 }
 
-.reserved1, .reserved2, .reserved3, .reserved4, .reserved5, .reserved6, .reserved7, .reserved8, .reserved9, .reserved10, .reserved11, .reserved12  {
+.reserved1, .reserved2,  .reserved3, .reserved4, .reserved5, .reserved6, .reserved7, .reserved8, .reserved9, .reserved10, .reserved11, .reserved12  {
   background-color: red;
   border: 2px solid darkgrey;
   left: 8em;
