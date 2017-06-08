@@ -13,7 +13,7 @@ export default class Header extends Component {
   render() {
     return(
       <div className="page-header">
-        <h1>YourSpace</h1>
+        <Link to={'/'}><h1>YourSpace</h1></Link>
         <AccountsUIWrapper  />
         <Link to={'/admin'} className="pull-right">Admin Page</Link>
       </div>

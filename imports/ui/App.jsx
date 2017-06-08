@@ -70,17 +70,7 @@ export class App extends Component {
         </header>
 
         {/*TO DO: Hide and Show?  */}
-        {
-          this.props.currentUser ?
 
-        <form onSubmit={this.handleSubmit.bind(this)} className="form-group new-room">
-          <input type='text' ref="nameInput" placeholder="Room Name"></input>
-          <input type='number' ref="seatsInput" placeholder="Number Of Seats"></input>
-          <input type='text' ref="tvInput" placeholder="Does the room have a TV?"></input>
-          <input type='text' ref="floorInput" placeholder="Floor Room is on"></input>
-          <button type="submit" className="btn btn-success">Add Room</button>
-        </form> : " "
-      }
         <div className="container-fluid">
         <div className="panel panel-default">
           <div className="panel-title">
@@ -106,10 +96,21 @@ export class App extends Component {
           </tbody>
         </table>
 
+
       </div>
 
     </div>
+    {
+      this.props.currentUser ?
 
+    <form onSubmit={this.handleSubmit.bind(this)} className="form-group new-room">
+      <input type='text' ref="nameInput" placeholder="Room Name"></input>
+      <input type='number' ref="seatsInput" placeholder="Number Of Seats"></input>
+      <input type='text' ref="tvInput" placeholder="Does the room have a TV?"></input>
+      <input type='text' ref="floorInput" placeholder="Floor Room is on"></input>
+      <button type="submit" className="btn btn-success">Add Room</button>
+    </form> : " "
+  }
   </div>
 
 
