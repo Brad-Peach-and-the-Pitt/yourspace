@@ -8,11 +8,27 @@
   background-color: green;
 }
 
+.open {
+  background-color: green;
+  border: 2px solid darkgrey;
+  left: 8em;
+  height: 4em;
+  top: 1em;
+}
+
+.reserved {
+  background-color: red;
+  border: 2px solid darkgrey;
+  left: 8em;
+  height: 4em;
+  top: 1em;
+}
+
 .times p{
   text-align: center;
   margin-top: 1em;
 }
 
 .reserve .well {
-
+  height: 60vh;
 }

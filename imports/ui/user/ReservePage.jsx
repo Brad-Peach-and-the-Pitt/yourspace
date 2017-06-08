@@ -6,6 +6,22 @@ import { Rooms } from '../../api/rooms.js'
 import Header from '../header.jsx';
 
 export class ReservePage extends Component {
+  constructor(props) {
+    super(props)
+    this.state={condition: true}
+  }
+
+
+
+
+  addStyle() {
+    this.setState(() => ({
+      condition: !this.state.condition
+    }))
+  }
+
+
+
   render(){
     return(
       <div  className="container-fluid reserve">
@@ -18,7 +34,7 @@ export class ReservePage extends Component {
             <h3>Tv: {this.props.room.tv} </h3>
             <h4>Times Available</h4>
             <div className="row container">
-              <div className="times col-md-1"><p>7 am</p></div>
+              <div onClick={this.addStyle.bind(this)} className={ this.state.condition ? "open times col-md-1" : "reserved times col-md-1"} ><p>7 am</p></div>
               <div className="times col-md-1"><p>8 am</p></div>
               <div className="times col-md-1"><p>9 am</p></div>
               <div className="times col-md-1"><p>10 am</p></div>
