@@ -8,13 +8,13 @@ import {
 
 
 import { Rooms } from '../api/rooms.js'
+import { Times } from '../api/times.js'
 
 export class Card extends Component {
   render() {
     return(
       <div className="container well">
         <h3>{this.props.room.name}</h3>
-        <h5>Times: ======================= </h5>
         <h5>Location: {this.props.room.floor}</h5>
         <h5>Tv: {this.props.room.tv} </h5>
         <h5>Capacity: Seats {this.props.room.seats}</h5>
@@ -25,19 +25,20 @@ export class Card extends Component {
 }
 
 Card.propTypes = {
-  room: PropTypes.object.isRequired
+  room: PropTypes.object.isRequired,
 }
 
-// export class CardSeats extends Component {
-//   render() {
-//     return(
-//       <div>
-//         <h3>{this.props.room.seats}</h3>
-//       </div>
-//     )
-//   }
-// }
-//
-// CardSeats.propTypes = {
-//   room: PropTypes.object.isRequired
-// }
+
+export class TimeCard extends Component {
+  render() {
+    return(
+      <div>
+        <h5>Times: {this.props.time.timeslot1} {this.props.time.timeslot2 }{this.props.time.timeslot3}{this.props.time.timeslot1}{this.props.time.timeslot1}{this.props.time.timeslot1}{this.props.time.timeslot1}{this.props.time.timeslot1}{this.props.time.timeslot1}{this.props.time.timeslot1}{this.props.time.timeslot1}{this.props.time.timeslot1} </h5>
+      </div>
+    )
+  }
+}
+
+TimeCard.propsTypes = {
+  time: PropTypes.object.isRequired
+}
