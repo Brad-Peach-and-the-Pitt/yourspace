@@ -17,3 +17,17 @@ getRooms(){
     { name: 'Mega Man', seats: 6, tv: true, floor:'Fourth Floor'}
   ]
 }
+
+# TODO #
+[ ] styling
+[ ] description in collection
+[ ] Make admin actual login
+[ ] track users across views
+[ ] MOMENT
+[ ] fix unlimited seed in database
+[ ] figure out seed issue with heroku
+[ ] change tv to yes or no
+[ ] how to link back to app from edit page
+
+##Product description##
+YourSpace is a better way to track the spaces you have and 
