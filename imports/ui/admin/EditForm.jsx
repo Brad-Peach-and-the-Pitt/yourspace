@@ -41,10 +41,11 @@ import Header from '../header.jsx'
         <form className="form-group col-md-12" onSubmit={this.editThisRoom.bind(this)}>
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.name} ref="nameInput" /><br />
         <input className="input-group col-md-12" type="text" defaultValue={this.props.room.seats} ref="seatsInput" /><br />
-        <input className="input-group col-md-12" type="text" defaultValue={this.props.room.floor} ref="tvInput" /><br />
-        <input className="input-group col-md-12" type="text" defaultValue={this.props.room.tv} ref="floorInput" />
+        <input className="input-group col-md-12" type="text" defaultValue={this.props.room.floor} ref="floorInput" /><br />
+        <input className="input-group col-md-12" type="text" defaultValue={this.props.room.tv} ref="tvInput" />
 
         <button className="btn btn-success" type="submit">Submit</button>
+        <Link to={'/admin/rooms'} className="btn btn-warning">Go Back</Link>
 
       </form>
     </div>
