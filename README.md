@@ -4,6 +4,7 @@ YourSpace is a dashboard for any sort of cooperative work space. An admin can go
 
 # Deployment
 Head to: https://yourspce.herokuapp.com/
+YouTube walkthrough [here](https://www.youtube.com/watch?v=oO5XluiZveg&t=3s)
 
 Users will be loaded onto a page that is prototyped for the Galvanize Platte Campus. In the top left corner you can create an account and login. You will then be able to click on each room separately and view more info about it. On the page we have a prototype of what room reservation would look like. In the top right you can click on admin and see a prototype of what the admin portal would look like. From here you can Create, Update, Edit, or Delete rooms and user info.
 
